@@ -6,7 +6,7 @@
           <el-input
             v-model="form.data"
             type="text"
-            placeholder="请依次输入物料号/po号/库位号/入库数量"
+            placeholder="请依次输入: 物料号 po号 库位号 入库数量"
             maxlength="50"
             show-word-limit
             style="width: 60vw;"

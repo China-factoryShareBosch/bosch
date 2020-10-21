@@ -14,11 +14,12 @@
     height: 100%;
     position: fixed;
     font-size: 0px;
-    top: 0;
+    top: 12px;
     bottom: 0;
     left: 0;
     z-index: 1001;
     overflow: hidden;
+    box-shadow: #eeeeee 5px 0px 4px;
 
     // reset element-ui css
     .horizontal-collapse-transition {

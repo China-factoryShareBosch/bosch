@@ -1,5 +1,7 @@
 <template>
   <div :class="classObj" class="app-wrapper">
+    <div class="top-bg">
+    </div>
     <div v-if="device==='mobile'&&sidebar.opened" class="drawer-bg" @click="handleClickOutside" />
     <sidebar class="sidebar-container" />
     <div :class="{hasTagsView:needTagsView}" class="main-container">
@@ -8,9 +10,9 @@
         <tags-view v-if="needTagsView" />
       </div>
       <app-main />
-      <right-panel v-if="showSettings">
-        <settings />
-      </right-panel>
+<!--      <right-panel v-if="showSettings">-->
+<!--        <settings />-->
+<!--      </right-panel>-->
     </div>
   </div>
 </template>
@@ -26,8 +28,6 @@ export default {
   components: {
     AppMain,
     Navbar,
-    RightPanel,
-    Settings,
     Sidebar,
     TagsView
   },
@@ -58,8 +58,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import "~@/styles/mixin.scss";
-  @import "~@/styles/variables.scss";
+  @import "@/styles/mixin.scss";
+  @import "@/styles/variables.scss";
 
   .app-wrapper {
     @include clearfix;
@@ -70,6 +70,21 @@ export default {
     &.mobile.openSidebar {
       position: fixed;
       top: 0;
+    }
+    .top-bg {
+      width: 100%;
+      padding-top: 12px;
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 3000px auto;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999999;
+    }
+
+    .top-bg {
+      background-image: url("~@/assets/theme/bosch_supergraphic_top.jpg");
     }
   }
 
