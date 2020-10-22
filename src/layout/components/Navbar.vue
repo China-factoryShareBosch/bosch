@@ -5,20 +5,17 @@
     <breadcrumb id="breadcrumb-container" class="breadcrumb-container" />
 
     <div class="right-menu">
-
+      <img src="@/assets/theme/bosch_logo_english_40.png" class="bosch-avatar">
       <el-dropdown class="avatar-container right-menu-item hover-effect" trigger="click">
-        <div>
-          <img src="@/assets/theme/bosch_logo_english.png" class="bosch-avatar">
+        <div class="avatar-wrapper">
+          <img src="@/assets/theme/male.jpeg" class="user-avatar">
+          <i class="el-icon-caret-bottom" />
         </div>
-<!--        <div class="avatar-wrapper">-->
-<!--          <img src="@/assets/theme/user.png" class="user-avatar">-->
-<!--          <i class="el-icon-caret-bottom" />-->
-<!--        </div>-->
-<!--        <el-dropdown-menu slot="dropdown" class="no-padding no-border">-->
-<!--          <el-dropdown-item divided @click.native="logout">-->
-<!--            <span style="display:block;">Log Out</span>-->
-<!--          </el-dropdown-item>-->
-<!--        </el-dropdown-menu>-->
+        <el-dropdown-menu slot="dropdown" class="no-padding no-border">
+          <el-dropdown-item divided @click.native="logout">
+            <span style="display:block;">Log Out</span>
+          </el-dropdown-item>
+        </el-dropdown-menu>
       </el-dropdown>
     </div>
   </div>
@@ -118,15 +115,9 @@ export default {
         margin-top: 5px;
         position: relative;
 
-        .bosch-avatar {
-          cursor: pointer;
-          width: 130px;
-          height: 50px;
-        }
-
         .user-avatar {
           cursor: pointer;
-          width: 40px;
+          width: 28px;
           height: 40px;
           border-radius: 10px;
         }

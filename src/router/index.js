@@ -92,7 +92,7 @@ export const constantRoutes = [
         path: 'instorage',
         component: () => import('@/views/bosch/index'),
         name: 'Instorage',
-        meta: { title: '入库', icon: 'dashboard', affix: true }
+        meta: { title: 'Spare parts in', icon: 'dashboard', affix: true }
       }
     ]
   },
@@ -105,7 +105,7 @@ export const constantRoutes = [
         path: 'receivegoods',
         component: () => import('@/views/bosch/index'),
         name: 'Receivegoods',
-        meta: { title: '收货', icon: 'documentation', affix: true }
+        meta: { title: 'Goods Receipt', icon: 'documentation', affix: true }
       }
     ]
   },
@@ -118,7 +118,7 @@ export const constantRoutes = [
         path: 'deliverystorage',
         component: () => import('@/views/bosch/index'),
         name: 'Deliverystorage',
-        meta: { title: '出库', icon: 'guide', affix: true }
+        meta: { title: 'Spare parts out', icon: 'guide', affix: true }
       }
     ]
   }
