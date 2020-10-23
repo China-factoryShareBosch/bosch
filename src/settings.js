@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Vue Element Admin',
+  title: 'CC-AT/IB2 NJP',
 
   /**
    * @type {boolean} true | false
